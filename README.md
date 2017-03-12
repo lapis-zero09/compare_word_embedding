@@ -90,13 +90,10 @@ def define_extensions(cythonize=False):
 $ sudo python setup.py install
 ```
 
-できない場合はgcc周りの環境が整っていないので，gccの4.9以上をインストールし，
-
-bashrcなどにコンパイラがgccになるように明示的に指定する
+できない場合はgcc周りの環境が整っていないので，gccの4.9以上をインストール
 
 ```
-$ brew install gcc5
-
+$ brew install gcc
 ```
 
 ```
