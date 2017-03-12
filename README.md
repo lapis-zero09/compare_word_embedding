@@ -21,7 +21,7 @@ $ python svd.py
 ## Evaluate
 
 ```
-$ python evaluate.py
+$ python predict.py
 ```
 
 ## methods
