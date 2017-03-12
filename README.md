@@ -99,4 +99,6 @@ $ brew install gcc
 
 ## References
 
-- ![Improving Distributional Similarity with Lessons Learned from Word Embeddings](https://transacl.org/ojs/index.php/tacl/article/view/570)
+- [Improving Distributional Similarity with Lessons Learned from Word Embeddings](https://transacl.org/ojs/index.php/tacl/article/view/570)
+- [glove-python](https://github.com/maciejkula/glove-python)
+- [Making Sense of Word2vec](https://github.com/piskvorky/word_embeddings)
