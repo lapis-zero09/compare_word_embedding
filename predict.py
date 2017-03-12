@@ -8,12 +8,12 @@ from similar_word import most_similar_dist
 from collections import defaultdict
 
 
-def calculate_score(result, score={}):
-    if not result is None:
-        s = sum([v for k, v in result])
-        for i, (k, v) in enumerate(sorted(result, key=lambda x: x[1], reverse=True)):
-            # method of calculating score
-        return score
+# def calculate_score(result, score={}):
+#     if not result is None:
+#         s = sum([v for k, v in result])
+#         for i, (k, v) in enumerate(sorted(result, key=lambda x: x[1], reverse=True)):
+#             # method of calculating score
+#         return score
 
 def load_model(model, topn, positive=[], negative=[]):
     if model == 'glove' or model == 'ppmi' or model == 'svd':
@@ -23,8 +23,8 @@ def load_model(model, topn, positive=[], negative=[]):
         model = Word2Vec.load('./model/{}.model'.format(model))
         return model.most_similar(positive=positive, negative=negative, topn=topn)
 
-def evaluate(topn, positive=[], negative=[]):
-    score = defaultdict(float)
+def predict(topn, positive=[], negative=[]):
+    # score = defaultdict(float)
     model = ['CBOW_with_hs', 'CBOW_with_ns15', 'CBOW_with_hs_ns15',
              'SG_with_hs', 'SG_with_ns15', 'SG_with_hs_ns15',
              'glove', 'ppmi', 'svd']
@@ -34,13 +34,8 @@ def evaluate(topn, positive=[], negative=[]):
         result = load_model(model=m, positive=positive, negative=negative, topn=topn)
         print(result)
 
-    return score
+    # return score
 
 
 if __name__ == '__main__':
-    ret = evaluate(positive=['英語', '海外', '営業'], negative=[], topn=10)
-    # ret = evaluate(positive=['バイト'], negative=[], topn=10)
-    # ret = evaluate(positive=['ファッション', 'アパレル'], negative=[], topn=10)
-    # ret = evaluate(positive=['ファッション'], negative=[], topn=10)
-    # ret = evaluate(positive=['アパレル'], negative=[], topn=10)
-    # ret = evaluate(positive=['既卒'], negative=[], topn=10)
+    ret = predict(positive=['iphone'], negative=[], topn=10)
