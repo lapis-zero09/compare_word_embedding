@@ -18,7 +18,7 @@ $ python ppmi.py
 $ python svd.py
 ```
 
-## Evaluate
+## Predict
 
 ```
 $ python predict.py
