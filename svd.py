@@ -35,7 +35,7 @@ if __name__ == "__main__":
     model = SvdModel(corpus, id2word, s_exponent=0.0)
     model.word2id = word2id
     model.id2word = id2word
-    utils.pickle(model, './tmp/svd.model')
+    utils.pickle(model, './model/svd.model')
 
 
     logger.info("finished running svd")
