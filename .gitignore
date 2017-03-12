@@ -5,3 +5,4 @@ text
 *.dat
 tmp/*
 model/*
+.ipynb_checkpoints
