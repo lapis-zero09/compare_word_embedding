@@ -96,16 +96,6 @@ $ sudo python setup.py install
 $ brew install gcc
 ```
 
-```
-alias sudo='sudo -E '
-export CC=/usr/local/bin/gcc
-export CXX=/usr/local/bin/g++
-alias gcc='gcc-5'
-alias cc='gcc-5'
-alias g++='g++-5'
-alias c++='c++-5'
-```
-
 
 ## References
 
